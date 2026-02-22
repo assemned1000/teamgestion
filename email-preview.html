@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+      .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+      h1 { color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }
+      h2 { color: #1e40af; margin-top: 30px; }
+      .expense-item { background: #f3f4f6; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #2563eb; }
+      .expense-header { font-weight: bold; font-size: 16px; color: #1e293b; margin-bottom: 8px; }
+      .expense-details { font-size: 14px; color: #475569; }
+      .amount { color: #dc2626; font-weight: bold; font-size: 16px; }
+      .type-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-left: 8px; }
+      .type-pro { background: #dbeafe; color: #1e40af; }
+      .type-perso { background: #fef3c7; color: #92400e; }
+      .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; font-size: 12px; color: #6b7280; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔔 Rappel de Paiement - Dépenses à venir</h1>
+      <p>Les dépenses suivantes sont dues dans <strong>2 jours</strong> (2025-12-27):</p>
+
+      <h2>🏢 Deep Closer</h2>
+      <div class="expense-item">
+        <div class="expense-header">
+          TEST - Loyer Bureau <span class="type-badge type-pro">Professionnel</span>
+        </div>
+        <div class="expense-details">
+          <div class="amount">50,000 DZD</div>
+          <div style="margin-top: 8px;"><strong>Description:</strong> Test expense for email reminder - 2 days before payment</div>
+          <div style="margin-top: 8px; color: #64748b;"><strong>Date de paiement:</strong> 2025-12-27</div>
+        </div>
+      </div>
+      <div style="margin-top: 15px; padding: 10px; background: #f9fafb; border-radius: 6px;">
+        <strong>Total pour Deep Closer:</strong>
+        <span style="margin-left: 10px;">50,000 DZD</span>
+      </div>
+
+      <div class="footer">
+        <p>Ce rappel automatique a été généré par le système Team Gestion.</p>
+        <p>Veuillez vous assurer que ces dépenses sont payées à temps.</p>
+      </div>
+    </div>
+  </body>
+</html>

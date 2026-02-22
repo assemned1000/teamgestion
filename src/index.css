@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: #0F1115;
+    --bg-base-alt: #12141A;
+    --surface: #1A1D24;
+    --surface-elevated-from: #1E212A;
+    --surface-elevated-to: #181B22;
+    --text-primary: #EAEAF0;
+    --text-secondary: #9AA0AB;
+    --text-tertiary: #6B7280;
+    --accent-positive: #10B981;
+    --accent-warning: #F59E0B;
+    --accent-info: #3B82F6;
+    --accent-neutral: #6B7280;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+  background-color: var(--bg-base);
+}
+
+input, select, textarea {
+  color: var(--text-primary) !important;
+  background-color: var(--surface) !important;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-tertiary) !important;
+}
+
+select {
+  color: var(--text-primary) !important;
+  background-color: var(--surface) !important;
+}
+
+select option {
+  background-color: var(--surface) !important;
+  color: var(--text-primary) !important;
+}
+
+button {
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.card-elevated {
+  background: linear-gradient(135deg, var(--surface-elevated-from) 0%, var(--surface-elevated-to) 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.card-surface {
+  background-color: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.glow-positive {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.glow-warning {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.glow-info {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.backdrop-blur-nav {
+  backdrop-filter: blur(12px);
+  background-color: rgba(15, 17, 21, 0.8);
+}
